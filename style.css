@@ -1,31 +1,30 @@
-
-selector_1{
+h1{
   text-align: center;
 }
 
-selector_2{
+#board{
   display: grid;
   grid-template-columns: repeat(7, 50px);
   justify-content: center;
 }
 
-selector_3{
+.subtitle{
   text-align: center;
   font-size: 15px;
 }
 
-selector_4{
+h2 + p{
   text-align: center;
   color: grey;
   font-size: 10px;
 }
 
-selector_5{
+div~p {
   text-align: center;
   text-decoration: underline;
 }
 
-selector_6{
+div > img{
   width: 95%;
   height: 95%;
   margin: auto;
@@ -34,7 +33,7 @@ selector_6{
   border: solid grey thin;
 }
 
-selector_7{
+div > .cell{
   display: block;
   height: 50px;
   width: 50px;
@@ -44,7 +43,7 @@ selector_7{
   font-size: 150%;
 }
 
-selector_8{
+div > div > div{
   display: block;
   height: 95%;
   width: 95%;
@@ -54,10 +53,11 @@ selector_8{
   background-color: blue;
 }
 
-selector_9{
+.cell:nth-child(odd){
   background-color: black;
 }
 
-selector_10{
+img:hover ,
+div div div:hover{
   border: solid yellow thin;
 }
